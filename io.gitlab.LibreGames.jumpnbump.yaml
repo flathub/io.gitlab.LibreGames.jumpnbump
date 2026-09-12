@@ -13,6 +13,12 @@ finish-args:
   - --share=ipc
   - --share=network
   - --device=dri
+cleanup:
+  - /include
+  - /lib/cmake
+  - /lib/pkgconfig
+  - /share/man
+  - '*.la'
 
 modules:
   - shared-modules/SDL2/SDL2_mixer.json
